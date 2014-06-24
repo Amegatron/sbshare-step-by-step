@@ -1,7 +1,7 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
+	"name": "amegatron/sbshare-step-by-step",
+	"description": "Поэтапная разработка сайта на Laravel.",
+	"keywords": ["sbshare"],
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.2.*"

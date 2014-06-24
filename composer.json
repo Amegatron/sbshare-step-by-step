@@ -1,6 +1,6 @@
 {
 	"name": "amegatron/sbshare-step-by-step",
-	"description": "Поэтапная разработка сайта на Laravel.",
+	"description": "Building a Laravel website step by step (sbshare.ru).",
 	"keywords": ["sbshare"],
 	"license": "MIT",
 	"require": {

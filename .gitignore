@@ -1,0 +1,15 @@
+/bootstrap/compiled.php
+/vendor
+/app/storage/cache
+/app/storage/logs
+/app/storage/meta
+/app/storage/sessions
+/app/storage/views
+composer.phar
+composer.lock
+.env.*.php
+.env.php
+.ds_store
+thumbs.db
+_ide_helper.php
+.idea

@@ -116,6 +116,20 @@ return array(
     |
     */
 
-    'attributes' => array(),
+    'attributes' => array(
+        'email'     => 'E-Mail',
+        'username'  => 'имя пользователя',
+        'password'  => 'пароль',
+        'sector'    => 'сектор',
+        'level'     => 'уровень',
+        'star'      => 'звезда',
+        'system'    => 'система',
+        'planet'    => 'планета',
+        'biome'     => 'биом',
+        'version'   => 'версия',
+        'os'        => 'операционная система',
+        'comment'   => 'комментарий',
+        'news'      => 'новость',
+    ),
 
 );

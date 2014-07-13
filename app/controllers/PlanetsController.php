@@ -14,6 +14,9 @@ class PlanetsController extends BaseController {
             return Redirect::back()->withErrors($validation)->withInput();
         }
 
+        if (Auth::check()) {
+            $data['user_id'] = Auth::user()->id;
+        }
         $planet = Planet::create($data);
         return Redirect::to(action('PlanetsController@getView', array($planet->id)));
     }

@@ -15,4 +15,10 @@ class BaseController extends Controller {
 		}
 	}
 
+    protected function getMessage($message, $redirect = false) {
+        return View::make('message', array(
+            'message'   => $message,
+            'redirect'  => $redirect,
+        ));
+    }
 }

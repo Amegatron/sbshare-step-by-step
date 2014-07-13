@@ -22,6 +22,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+
+        <link rel="stylesheet" href="/css/style.css">
         @yield('headExtra')
     </head>
     <body>
@@ -41,6 +43,21 @@
                         <!-- NAVIGATION ITEMS -->
                         <li><a href="/planets/add">Добавить планету</a></li>
                     </ul>
+
+                    @if (!Auth::check())
+                        <form class="navbar-form navbar-right" role="form" action="{{ action('UsersController@postLogin') }}" method="post">
+                            <a href="/users/login" class="btn btn-success">Войти</a>
+                            <a href="/users/register" class="btn btn-success">Регистрация</a>
+                        </form>
+                    @else
+                        <form class="navbar-form navbar-right" role="form" action="/users/logout">
+                            <button class="btn btn-success">Выйти</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><strong>{{ Auth::user()->username }}</strong></a></li>
+                        </ul>
+                    @endif
+
                 </div><!--/.navbar-collapse -->
             </div>
         </div>

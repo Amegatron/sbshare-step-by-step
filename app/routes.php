@@ -17,3 +17,4 @@ Route::get('/', array(
 ));
 
 Route::controller('planets', 'PlanetsController');
+Route::controller('users', 'UsersController');

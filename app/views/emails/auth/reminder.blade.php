@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<h2>Password Reset</h2>
+		<h2>Восстановление пароля</h2>
 
 		<div>
-			To reset your password, complete this form: {{ URL::to('password/reset', array($token)) }}.
+			Для сброса пароля перейдите по ссылке: {{ URL::to('password/reset', array($token)) }}.
 		</div>
 	</body>
 </html>

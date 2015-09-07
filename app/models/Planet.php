@@ -48,7 +48,7 @@ class Planet extends Eloquent {
     public static $oses = array(
         'windows'   => 'Windows',
         'linux'     => 'Linux',
-        'max'       => 'Max OS',
+        'mac'       => 'Mac OS',
     );
 
     public static function getValidationRules() {
